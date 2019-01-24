@@ -1,0 +1,36 @@
+{
+  "name": "belorussian-poets-task",
+  "version": "1.0.0",
+  "description": "this app provides info about famous belorussian poets",
+  "main": "build/bundle.js",
+  "scripts": {
+    "build": "webpack -d && cp src/index.html build/index.html && webpack-dev-server --inline --hot",
+    "build:prod": "webpack -p && cp src/index.html build/index.html && webpack-dev-server --inline --hot",
+    "dev": "npm run build"
+  },
+  "keywords": [
+    "poets",
+    "belorussian",
+    "react",
+    "js",
+    "rsschool"
+  ],
+  "author": "Group39",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "style-loader": "^0.23.1"
+  }
+}
