@@ -4,9 +4,16 @@
   "description": "this app provides info about famous belorussian poets",
   "main": "build/bundle.js",
   "scripts": {
-    "build": "webpack -d && cp src/index.html build/index.html && webpack-dev-server --inline --hot",
+    "build": "webpack -d && cp src/index.html build/index.html && webpack-dev-server --open --inline --hot",
     "build:prod": "webpack -p && cp src/index.html build/index.html && webpack-dev-server --inline --hot",
-    "dev": "npm run build"
+    "dev": "npm run build",
+    "lint": "./node_modules/.bin/eslint src/",
+    "fix-lint": "./node_modules/.bin/eslint src/ --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "keywords": [
     "poets",
@@ -21,16 +28,28 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "husky": "^1.3.1",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.29.0",
+    "webpack-clean-plugin": "^0.2.3",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "style-loader": "^0.23.1"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }

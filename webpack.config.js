@@ -1,4 +1,5 @@
 const path = require('path');
+const WebpackCleanPlugin = require('webpack-clean-plugin');
 
 module.exports = {
   devtool: 'source-map',
@@ -6,32 +7,54 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
-    publicPath: '/build/'
+    publicPath: '/build/',
   },
   mode: 'development',
   module: {
     rules: [
       {
-        test: /\.js$/, 
+        test: /.(m?js|jsx)$/,
         exclude: /node_modules/,
         use: [
           {
-            loader: "babel-loader",
-            options: { presets: ["@babel/preset-env", "@babel/preset-react"] }
-          }
-        ] 
+            loader: 'babel-loader',
+            options: { presets: ['@babel/preset-env', '@babel/preset-react'] },
+          },
+        ],
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
-        use: ['style-loader', 'css-loader'],
-      }
-    ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
+        test: /\.js$/,
+        exclude: ['/node_modules/', '/build/'],
+        use: ['eslint-loader'],
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 9999,
+            },
+          },
+        ],
+      },
+    ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
+  plugins: [
+    new WebpackCleanPlugin(['build']),
+  ],
   devServer: {
-    contentBase: "./src",
+    contentBase: './src',
     hot: true,
     port: 3000 || 8080,
-    historyApiFallback: true
-  }
-}
+    historyApiFallback: true,
+  },
+};
