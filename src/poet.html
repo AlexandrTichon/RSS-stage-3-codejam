@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Культурный портал Беларуси</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+<body>
+  <header class="page-header">
+      <div class="container">
+          <div class="languages-buttons">
+            <button type="button" title="Russian">RU</button>
+            <button type="button" title="English">EN</button>
+            <button type="button" title="Belarussian">BY</button>
+          </div>
+          <a href="./index.html">
+            <h1>Портал "Культура Беларуси"</h1>
+          </a> 
+          <div class="wrapper">
+            <nav>
+              <ul class="main-navigation">
+                <li>
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li>
+                  <a href="./poets.html">Поэты Беларуси</a>
+                </li>
+              </ul>
+            </nav>
+            
+          </div>
+      </div>
+  </header>
+    <main class="container poet-page">
+      <section class="main-information">
+        <img src="https://via.placeholder.com/200" alt="Фотограяия поэта">
+        <h2>Имя поэта</h2>
+      </section>
+      <section class="timeline">
+        <h3>Биография</h3>
+        <div id="timeline-js"></div>
+      </section>
+      <section class="works">
+        <h3>Основные работы</h3>
+        <ul class="works-list">
+          <li class="work-item">
+            <p><span class="work-date">Дата</span> - <span class="work-title">Название</span></p>
+          </li>
+          <li class="work-item">
+              <p><span class="work-date">Дата</span> - <span class="work-title">Название</span></p>
+          </li>
+          <li class="work-item">
+            <p><span class="work-date">Дата</span> - <span class="work-title">Название</span></p>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <h3>Фотографии</h3>
+        <div id="gallery-js"></div>
+      </section>
+      <section class="video">
+        <h3>Видео</h3>
+        <div id="video-js"></div>
+      </section>
+      <section class="map">
+        <h3>Место рождения</h3>
+        <div id="map-js"></div>
+      </section>
+    </main>
+  <script src="../build/bundle.js"></script>
+</body>
+</html>

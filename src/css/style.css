@@ -1,0 +1,227 @@
+:root {
+  --bg-color: #dee7ee;
+  --text-color: #242b35;
+  --light-main-color: #3ec0dd;
+  --main-color: #11a1c4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  width: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  max-width: 1200px;
+  min-width: 300px;
+}
+
+.page-header {
+  padding: 10px 0;
+  background-color: var(--light-main-color);
+}
+
+.page-header h1 {
+   margin-bottom: 30px;
+}
+
+.page-header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.main-navigation li{
+  margin-right: 20px;
+  padding: 5px;
+  border-bottom: 1px solid transparent;
+}
+
+.main-navigation li:last-child{
+  margin-left: 0;
+}
+
+.main-navigation li:hover{
+  color: var(--bg-color);
+  border-bottom: 1px solid var(--bg-color)
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.languages-buttons {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.languages-buttons button {
+  padding: 3px;
+  margin: 3px;
+  border: transparent;
+  border-radius: 3px;
+  font: inherit;
+  color: inherit;
+  background-color: var(--light-main-color);
+  cursor: pointer;
+}
+
+.languages-buttons button:hover, 
+.languages-buttons button:focus {
+  background-color: var(--main-color);
+  box-shadow: 0 0 5px var(--light-main-color);
+}
+
+.flex-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days-poet {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  box-shadow: 0 0 5px 0 var(--text-color);
+}
+
+.days-poet figure {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.label {
+  align-self: flex-start;
+  background-color: var(--light-main-color);
+  font-style: italic;
+}
+
+.days-poet img {
+  float: right;
+}
+
+.days-poet figcaption {
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.project {
+  padding: 20px;
+  max-width: 600px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.team {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.team-member {
+  padding: 10px;
+  width: 34%;
+  min-width: 300px;
+}
+
+.team-member figure {
+  display: flex;
+  align-items: center;
+}
+
+.team-member img {
+  float: left;
+  border-radius: 50%;
+}
+
+.team-member figcaption {
+  padding: 20px;
+}
+
+.github-link {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.github-link:hover {
+  font-weight: bolder;
+}
+
+
+/* Styles for poet page */
+
+.poet-page section {
+  padding: 30px;
+}
+
+
+.poet-page h2, h3 {
+  margin: 10px 0 10px;
+}
+
+.poet-page h3 {
+  text-align: center;
+}
+
+.main-information {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  font-weight: bolder;
+  list-style-type: circle;
+}
