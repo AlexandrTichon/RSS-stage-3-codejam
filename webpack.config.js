@@ -3,10 +3,13 @@ const WebpackCleanPlugin = require('webpack-clean-plugin');
 
 module.exports = {
   devtool: 'source-map',
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+    poets: './src/poets.js',
+  },
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: '[name].js',
     publicPath: '/build/',
   },
   mode: 'development',
