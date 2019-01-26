@@ -185,6 +185,7 @@ section h2 {
   float: left;
   border-radius: 50%;
 }
+
 .team-member figcaption {
   padding: 20px;
 }
@@ -196,4 +197,31 @@ section h2 {
 
 .github-link:hover {
   font-weight: bolder;
+}
+
+
+/* Styles for poet page */
+
+.poet-page section {
+  padding: 30px;
+}
+
+
+.poet-page h2, h3 {
+  margin: 10px 0 10px;
+}
+
+.poet-page h3 {
+  text-align: center;
+}
+
+.main-information {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.work-item {
+  font-weight: bolder;
+  list-style-type: circle;
 }
