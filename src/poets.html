@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search Poets</title>
+</head>
+<body>
+    <header class="page-header">
+      <div class="container">
+        <div class="languages-buttons">
+          <button type="button" title="Russian">RU</button>
+          <button type="button" title="English">EN</button>
+          <button type="button" title="Belarussian">BY</button>
+        </div>
+        <a href="./index.html">
+          <h1>Портал "Культура Беларуси"</h1>
+        </a> 
+        <div class="wrapper">
+          <nav>
+            <ul class="main-navigation">
+              <li>
+                <a href="./index.html">Главная</a>
+              </li>
+              <li>
+                <a href="./poets.html">Поэты Беларуси</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  <main>
+    <div id="poets" class="poets">
+      <div id="search" class="poets-search">
+        <label>Имя поэта: <input type="text" id="poet_name"></label>
+        <label>Место рождения: <input type="text" id="poet_hometown"></label>
+        <button id="search_button" class="search-button">Поиск</button>
+      </div>
+    </div>
+  </main>
+  <script src="../build/bundle.js"></script>
+</body>
+</html>

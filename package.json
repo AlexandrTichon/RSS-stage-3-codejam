@@ -50,7 +50,7 @@
   },
   "dependencies": {
     "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react-dom": "^16.7.0"
     "vertical-timeline-component-for-react": "^1.0.6"
   }
 }
