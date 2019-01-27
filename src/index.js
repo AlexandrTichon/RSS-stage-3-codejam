@@ -5,9 +5,7 @@ import Gallery from './components/gallery/gallery';
 import data from './data/poets-ru.json';
 import './components/biography';
 
-
 console.log('it works!awesome!');
-console.log(data[0].gallery);
 
 class GalleryDiv extends React.Component {
   render() {
