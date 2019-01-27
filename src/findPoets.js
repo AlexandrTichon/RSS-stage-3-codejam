@@ -10,7 +10,7 @@ function getDOMPoets() {
     poetItem.className = 'poet-item';
     poetItem.innerHTML = `
       <figure>
-        <p><img src=data${item.photo} alt=${item.name} /></p>
+        <p><img src=${item.photo} alt=${item.name} /></p>
         <figcaption><a href="./poet.html">${item.name}<a></figcaption>
       </figure>`;
     poetItems.appendChild(poetItem);
@@ -59,7 +59,7 @@ function getSearchPoets() {
         searchItem.className = 'poet-item';
         searchItem.innerHTML = `
           <figure>
-            <p><img src=data${item.photo} alt=${item.name} /></p>
+            <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption><a href="./poet.html">${item.name}<a></figcaption>
           </figure>`;
         searchItems.appendChild(searchItem);
@@ -85,7 +85,7 @@ function getSearchPoets() {
         searchItem.className = 'poet-item';
         searchItem.innerHTML = `
           <figure>
-            <p><img src=data${item.photo} alt=${item.name} /></p>
+            <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption><a href="./poet.html">${item.name}<a></figcaption>
           </figure>`;
         searchItems.appendChild(searchItem);
@@ -114,7 +114,7 @@ function getSearchPoets() {
         searchItem.className = 'poet-item';
         searchItem.innerHTML = `
           <figure>
-            <p><img src=data${item.photo} alt=${item.name} /></p>
+            <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption><a href="./poet.html">${item.name}<a></figcaption>
           </figure>`;
         searchItems.appendChild(searchItem);
