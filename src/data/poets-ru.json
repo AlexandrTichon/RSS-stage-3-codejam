@@ -1,6 +1,7 @@
 [{
     "id": "0",
     "name": "Максим Богданович",
+    "birthplace": "Минск",
     "photo": "/img/Bogdanovich1.jpg",
     "biography": [{
         "date": "9 декабря 1891 года",
@@ -87,6 +88,7 @@
   {
     "id": "1",
     "name": "Янка Купала",
+    "birthplace": "Вязынка",
     "photo": "/img/Kupala.jpg",
     "biography": [{
         "date": "7 июля 1882 года",
@@ -157,6 +159,7 @@
   {
     "id": "2",
     "name": "Якуб Колас",
+    "birthplace": "Акинчицы",
     "photo": "/img/Kolas1.jpg",
     "biography": [{
         "date": "22 октября 1882 года",
@@ -295,6 +298,7 @@
   {
     "id": "3",
     "name": "Змитро́к Бяду́ля (Самуил Ефимович Плавник)",
+    "birthplace": "Посадец",
     "photo": "/img/Byadulya/Byadulya1.jpeg",
     "biography": [{
         "date": "23 апреля 1886 года",
@@ -365,6 +369,7 @@
   {
     "id": "4",
     "name": "Максим Танк(Евгений Иванович Скурко)",
+    "birthplace": "Пильковщина",
     "photo": "/img/Tank/Tank1.jpg",
     "biography": [{
         "date": "4 сентября 1912 года",
