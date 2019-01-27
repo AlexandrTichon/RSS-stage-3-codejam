@@ -1,0 +1,380 @@
+[{
+    "id": "0",
+    "name": "Maksim Bahdanovič ",
+    "birthplace": "Minsk",
+    "photo": "./data/img/Bogdanovich1.jpg",
+    "biography": [{
+        "date": "9 December 1891",
+        "description": "Bahdanovič was born in Minsk in the family of Adam Bahdanovič, an important Belarusian ethnographer who through most of his career worked as a bank clerk. Maksim was born in a family apartment at Karakazov House located at Trinity Hill where beside the Bahdanovich's apartment was located the First Parish School. His father was of unlanded peasantry family, while his mother (née Myakota) was of old Belarusian noble family of Kurcz coat of arms that was not adopted in the Russian Empire."
+      },
+      {
+        "date": "1892",
+        "description": "The family moved to Hrodna where Maksim's father received a job at local bank. Soon after the move the future poet's mother, Maria, died of tuberculosis in 1896"
+      },
+      {
+        "date": "1896",
+        "description": "Adam Bahdanovič moved with his children to Nizhny Novgorod, Russia. At that time Maksim wrote his first poems in the Belarusian language. In 1902 Bahdanovič attended a gymnasium. During the Revolution of 1905 he was an active participant of the strikes organised by his commilitodes."
+      },
+      {
+        "date": "1907",
+        "description": "Nasha Niva came out with Bahdanovič's first published work — the novel Muzyka."
+      },
+      {
+        "date": "June 1908",
+        "description": "The poet's family moved to Yaroslavl'. After finishing school in 1911 Bahdanovič went to Belarus to meet important figures of the Belarusian Renaissance: Vaclau Lastouski, Ivan Luckievich and Anton Luckievich. In the same year he began studying of law at a Yaroslavl' lyceum. During his studies Bahdanovič worked at a newspaper, wrote numerous works of literature and was actively published in both Belarus and Russia."
+      },
+      {
+        "date": "1914",
+        "description": "His only book of poems, Vianok (A Wreath), was published in Vilna (today Vilnius)"
+      },
+      {
+        "date": "1916",
+        "description": "After absolvation of the lyceum, Maksim Bahdanovič moved to Minsk and worked there at the local guberniya administration."
+      },
+      {
+        "date": "1917",
+        "description": "Bahdanovič went to Crimea to be treated for tuberculosis. The treatment was unsuccessful, and that year he died in Yalta."
+      }
+    ],
+    "works": [{
+        "date": "1907",
+        "title": "Music"
+      },
+      {
+        "date": "1910",
+        "title": "Let's move, brothers!"
+      },
+      {
+        "date": "1911",
+        "title": "Slutsk weavers"
+      },
+      {
+        "date": "1912",
+        "title": "Pan and muzhik"
+      },
+      {
+        "date": "1914",
+        "title": "Sonnet"
+      }
+    ],
+    "gallery": ["../../data/img/Bogdanovich1.jpg", ".../../data/img/Bogdanovich2.jpg", "../../data/img/Bogdanovich3.jpg"],
+    "video": "https://www.youtube.com/watch?v=xIHoUa6VJI8",
+    "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
+  },
+  {
+    "id": "1",
+    "name": "Yanka Kupala",
+    "birthplace": "Viazynka",
+    "photo": "./data/img/Kupala1.jpg",
+    "biography": [{
+        "date": "7 July 1882",
+        "description": "Kupala was born in Viazynka, a folwark settlement near Maladzyechna. His family was noble, although both of Kupala's parents were employed as tenant farmers at the folwark. Kupala was thus essentially born into a landless peasant class. "
+      },
+      {
+        "date": "1898",
+        "description": "Kupala received a traditional Belarusian education, completed his studies."
+      },
+      {
+        "date": "1908",
+        "description": "Kupala moved to Vilnius, where he continued with his career as a poet. The same year the first published collection of his poems, Жалейка (The Little Flute) brought on the ire of the czarist government, which ordered the book confiscated as an anti-government publication."
+      },
+      {
+        "date": "1909—1913",
+        "description": "Kupala left for Saint Petersburg. The subsequent year saw the publication of several works, including the poem Адвечная песьня (Eternal Song), which appeared as a book in St. Petersburg in July 1910. Сон на кургане (Dream on a Barrow)– completed in August 1910 –symbolised the poor state of Kupala's Belarusian homeland"
+      },
+      {
+        "date": "1917",
+        "description": "Kupala's writing changed to an optimistic tone following the Great October Revolution. Among Kupala's numerous translations into the Belarusian language were the internationalist-Marxist anthem The Internationale and an ancient epic poem The Tale of Igor's Campaign (translated in 1921)"
+      },
+      {
+        "date": "1941",
+        "description": "Kupala was awarded the Order of Lenin in 1941 for the poetry collection Ад сэрца (From the Heart). With the Occupation of Belarus by Nazi Germany in 1941, because of being very ill he moved to Moscow and then to Tatarstan."
+      },
+      {
+        "date": "1942",
+        "description": "He died in Moscow aged 59, having fallen down the stairwell in Hotel Moskva."
+      }
+    ],
+    "works": [{
+        "date": "15 July 1904",
+        "title": "My tribute"
+      },
+      {
+        "date": "1905",
+        "title": "Man"
+      },
+      {
+        "date": "1906",
+        "title": "In winter"
+      },
+      {
+        "date": "1907",
+        "title": "No one"
+      },
+      {
+        "date": "1912",
+        "title": "Paulinka"
+      }
+    ],
+    "gallery": ["../../data/img/Kupala1.jpg", "../../data/img/Kupala2.jpg", "../../data/img/Kupala3.jpg"],
+    "video": "https://www.youtube.com/watch?v=xIHoUa6VJI8",
+    "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
+  },
+  {
+    "id": "2",
+    "name": "Yakub Kolas",
+    "birthplace": "Akienchici",
+    "photo": "./data/img/Kolas1.jpg",
+    "biography": [{
+        "date": "22 October 1882",
+        "description": "Born in village Akienchici (now Stolbci), in family of forester Mikhail Mizkevich."
+      },
+      {
+        "date": "1902",
+        "description": "Finished Nesvizh seminary."
+      },
+      {
+        "date": "1906",
+        "description": "Firs poem - 'Krai Rodzimyi'"
+      },
+      {
+        "date": "1908",
+        "description": "For participating at illegal meetings was arrested and put at prison till 1911 in Minsk."
+      },
+      {
+        "date": "1912",
+        "description": "Worked as a teacher in Pinsk. Here his firs son was born"
+      },
+      {
+        "date": "1918",
+        "description": "After demobilization was a teacher in Obolon"
+      },
+      {
+        "date": "1929",
+        "description": "Was in a post as a vice president at Academy of Science of BSSR"
+      },
+      {
+        "date": "13 August 1956",
+        "description": "Died after extended illness. Was buried at military graveyard in Minsk"
+      }
+    ],
+    "works": [{
+        "date": "1908",
+        "title": "collecton of poems «Songs of bondage»"
+      },
+      {
+        "date": "1910",
+        "title": "collecton of poems стихов «Песни печали»"
+      },
+      {
+        "date": "1912",
+        "title": "collecton of prose «Stories»"
+      },
+      {
+        "date": "1914",
+        "title": "collecton of prose  «Native reflections»"
+      },
+      {
+        "date": "1923",
+        "title": "poem «New Land»"
+      },
+      {
+        "date": "1923",
+        "title": "novel «In the wilderness of Polissya»"
+      },
+      {
+        "date": "1925",
+        "title": "poem «Simon the musician»"
+      },
+      {
+        "date": "1926",
+        "title": "poem «In the vastness of life»"
+      },
+      {
+        "date": "1928",
+        "title": "poem «In the depths of Polesie»"
+      },
+      {
+        "date": "1930",
+        "title": "collection of poems «Kolhoznie»"
+      },
+      {
+        "date": "1931",
+        "title": "poem «Renegade»"
+      },
+      {
+        "date": "1933",
+        "title": "poem «Bog»"
+      },
+      {
+        "date": "1935",
+        "title": "collection of poems «Autumn»"
+      },
+      {
+        "date": "1942",
+        "title": "collection of poems «Revenge»"
+      },
+      {
+        "date": "1943",
+        "title": "collection of poems «Earth voice»"
+      },
+      {
+        "date": "1943",
+        "title": "poem «Court in the forest»"
+      },
+      {
+        "date": "1945",
+        "title": "poem «Retribution»"
+      },
+      {
+        "date": "1947",
+        "title": "poem «Fisher's lodge»"
+      },
+      {
+        "date": "1954",
+        "title": "poem «At the crossroads»"
+      }
+    ],
+    "gallery": ["../../data/img/Kolas1.jpg", "../../data/img/Kolas2.jpg", "../../data/img/Kolas3.jpg"],
+    "video": "https://youtu.be/EPfYYg5QPMg",
+    "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
+  },
+  {
+    "id": "3",
+    "name": "Zmitrok Byadulya",
+    "birthplace": "Posadec",
+    "photo": "./data/img/Byadulya1.jpg",
+    "biography": [{
+        "date": "23 April 1886",
+        "description": "Was born in the town of Posadets (now it is the village of Posadts in the Zarechensky village council of the Logoisk district of the Minsk region )."
+      },
+      {
+        "date": "1910",
+        "description": "Z. Byadulya gave his poems to the Nasha Niva editorial board, but they were not published, perhaps because they were still immature."
+      },
+      {
+        "date": "1911 - 1912",
+        "description": "Byaduli’s poems in Russian were published in the magazines “On the banks of the Neva” (St. Petersburg) and “Young impulses” (Vilna)."
+      },
+      {
+        "date": "1913",
+        "description": "He published a collection of lyrical impressions in the Belarusian language (Petersburg), since then he wrote almost exclusively in Belarusian."
+      },
+      {
+        "date": "1918",
+        "description": "Was publishing in the magazine 'Boloruskiy Shlyah' under nazi occupation"
+      },
+      {
+        "date": "1934",
+        "description": "Became a member of writer's society USSR"
+      },
+      {
+        "date": "3 November 1941",
+        "description": "Died near Uralsk (Khazahstan) and was buried there"
+      }
+    ],
+    "works": [{
+        "date": "1922",
+        "title": "poems «Woodland fables» and «Yarilo»"
+      },
+      {
+        "date": "1927",
+        "title": "novel «Nightingale»"
+      },
+      {
+        "date": "1931",
+        "title": "collection of stories «Unbelievable stories»"
+      },
+      {
+        "date": "1932",
+        "title": "novel «Yazep Krushinski»"
+      },
+      {
+        "date": "1939",
+        "title": "autobiography «In the dense forests»"
+      }
+    ],
+    "gallery": ["../../data/img/Byadulya1.jpeg", "../../data/img/Byadulya2.jpeg", "../../data/img/Byadulya3.jpeg"],
+    "video": "https://youtu.be/GB_rlueYscM",
+    "maps": "<iframe src=эhttps://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
+  },
+  {
+    "id": "4",
+    "name": "Maksim Tank",
+    "birthplace": "Pilkovcschina",
+    "photo": "./data/img/Tank1.jpg",
+    "biography": [{
+        "date": "4 September 1912",
+        "description": "Maksim Tank (Jaŭhien Skurko) was born into a wealthy peasant family in the village Piĺkaŭščyna"
+      },
+      {
+        "date": "1914",
+        "description": "His family went to Moscow as refugees from the approaching First World War and lived there till 1922."
+      },
+      {
+        "date": "1928",
+        "description": "Skurko joined an underground communist youth organization in his school in Radaškovičy."
+      },
+      {
+        "date": "1930s",
+        "description": "Jaŭhien Skurko participated in the Belarusian underground communist activism, writing for Belarusian and Polish underground publications. In 1932, he was arrested and placed in the Lukiškės Prison in Wilno."
+      },
+      {
+        "date": "1932",
+        "description": "He illegally crossed the border with the Soviet Union and joined Belarusian underground group in Minsk. He was eventually arrested by the Soviet authorities, interrogated by the NKVD and deported to Poland"
+      },
+      {
+        "date": "1936",
+        "description": "Skurko was admitted into the underground Communist Party of West Belarus."
+      },
+      {
+        "date": "1945 - 1948",
+        "description": "He worked as editor at the satirical magazine Vozhyk."
+      },
+      {
+        "date": "1948 - 1966",
+        "description": "He was editor in chief of the major Belarusian literature magazine Polymia."
+      },
+      {
+        "date": "1969 - 1989",
+        "description": "Was a member of the Supreme Soviet of the USSR."
+      },
+      {
+        "date": "7 August 1995",
+        "description": "Maksim Tank died in Minsk."
+      }
+    ],
+    "works": [{
+        "date": "1936",
+        "title": "poetry collection «On stages»"
+      },
+      {
+        "date": "1937",
+        "title": "poetry collection «Клюквенный цвет»"
+      },
+      {
+        "date": "1937",
+        "title": "poem «Narach»"
+      },
+      {
+        "date": "1938",
+        "title": "«Under the mast»"
+      },
+      {
+        "date": "1957",
+        "title": "«Lightning trail»"
+      },
+      {
+        "date": "1964",
+        "title": "«Sip of water»"
+      },
+      {
+        "date": "1972",
+        "title": "«Let there be light»"
+      }
+    ],
+    "gallery": ["../../data/img/Tank1.jpg", "../../data/img/Tank2.jpg", "../../data/img/Tank3.jpg"],
+    "video": "https://youtu.be/ZECpiojVfZs",
+    "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
+  }
+]
