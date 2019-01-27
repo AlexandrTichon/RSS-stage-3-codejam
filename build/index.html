@@ -1,13 +1,102 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Page Title</title>
+  <title>Культурный портал Беларуси</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
+  <header class="page-header">
+      <div class="container">
+          <div class="languages-buttons">
+            <button type="button" title="Russian">RU</button>
+            <button type="button" title="English">EN</button>
+            <button type="button" title="Belarussian">BY</button>
+          </div>
+          <a href="./index.html">
+            <h1>Портал "Культура Беларуси"</h1>
+          </a> 
+          <div class="wrapper">
+            <nav>
+              <ul class="main-navigation">
+                <li>
+                  <a href="./index.html">Главная</a>
+                </li>
+                <li>
+                  <a href="./poets.html">Поэты Беларуси</a>
+                </li>
+              </ul>
+            </nav>
+            
+          </div>
+      </div>
+    </header>
+      <main class="container flex-container">
+        <section class="project">
+          <h2>О портале</h2>
+          <p>Учебный проект студентов The Rolling Scopes School набора 2018-Q3. Здесь вы найдете основную информацию о поэтах Беларуси. </p>
+        </section>
+        <aside class="days-poet">
+          <span class="label">Поэт дня</span>
+          <figure>
+            <figcaption>Имя поэта</figcaption>
+            <img src="https://via.placeholder.com/150" alt="Фотография поэта" width="150" height="150">
+          </figure>
+        </aside>
+        <section class="team">
+          <h2>О команде</h2>
+          <p>Наша группа была сформирована великим рандомом и состоит из четырёх человек.</p>
+          <ul class="team-list">
+            <li class="team-member">
+              <figure class="clearfix">
+                <img src="https://avatars2.githubusercontent.com/u/37875890?s=460&v=4" alt="Фотография участника команды" width="100" height="100">
+                <figcaption>
+                  <p>Юлия Метлёнок</p>
+                  <p class="github-link">
+                    <a href="https://github.com/JuliaMV">GitHub</a>
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team-member">
+              <figure class="clearfix">
+                <img src="https://avatars1.githubusercontent.com/u/40933674?s=460&v=4" alt="Фотография участника команды" width="100" height="100">
+                <figcaption>
+                  <p>Алексей Новомлинец</p>
+                  <p class="github-link">
+                    <a href="https://github.com/alexeynovomlinets">GitHub</a>
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team-member">
+              <figure class="clearfix">
+                  <img src="https://avatars1.githubusercontent.com/u/38797690?s=460&v=4" alt="Фотография участника команды" width="100" height="100">
+                <figcaption>
+                    <p>Александр Тихон</p>
+                    <p class="github-link">
+                      <a href="https://github.com/alexandrtichon">GitHub</a>
+                    </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="team-member">
+              <figure class="clearfix">
+                <img src="https://avatars2.githubusercontent.com/u/18004357?s=460&v=4" alt="Фотография участника команды" width="100" height="100">
+                <figcaption>
+                  <p>Александр Щемелёв</p>
+                  <p class="github-link">
+                    <a href="https://github.com/AntiHero">GitHub</a>
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
+      </main>
   <script src="../build/bundle.js"></script>
 </body>
 </html>

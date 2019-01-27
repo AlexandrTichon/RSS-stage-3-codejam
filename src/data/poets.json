@@ -1,6 +1,6 @@
 [{
     "name": "Максим Богданович",
-    "foto": "./img/Bogdanovich1.jpg",
+    "photo": "/img/Bogdanovich1.jpg",
     "biography": [{
         "date": "9 декабря 1891 года",
         "description": "Максим Богданович родился в Минске. Прадед поэта по материнской линии был православным священником, дед — мелким чиновником. Отец Максима Адам Егорович служил учителем. Он пережил сына, впоследствии написав его биографию. У Максима было два брата — Вадим и Лев."
@@ -79,13 +79,13 @@
         "title": "Санет"
       }
     ],
-    "galery": ["./img/Bogdanovich1.jpg", "./img/Bogdanovich2.jpg", "./img/Bogdanovich3.jpg"],
+    "galery": ["/img/Bogdanovich1.jpg", "/img/Bogdanovich2.jpg", "/img/Bogdanovich3.jpg"],
     "video": "https://www.youtube.com/watch?v=xIHoUa6VJI8",
     "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
   },
   {
     "name": "Янка Купала",
-    "foto": "./img/Kupala.jpg",
+    "photo": "/img/Kupala.jpg",
     "biography": [{
         "date": "7 июля 1882 года",
         "description": "В деревне Вязынка (ныне Молодечненского района Минской области Белоруссии) в белорусской католической семье Доминика Онуфриевича Луцевича и Бенигны Ивановны Луцевич"
@@ -148,13 +148,13 @@
         "title": "Пау́линка"
       }
     ],
-    "galery": ["./img/Bogdanovich1.jpg", "./img/Bogdanovich2.jpg", "./img/Bogdanovich3.jpg"],
+    "galery": ["/img/Bogdanovich1.jpg", "/img/Bogdanovich2.jpg", "/img/Bogdanovich3.jpg"],
     "video": "https://www.youtube.com/watch?v=xIHoUa6VJI8",
     "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
   },
   {
     "name": "Якуб Колас",
-    "photo": "./img/Kolas1.jpg",
+    "photo": "/img/Kolas1.jpg",
     "biography": [{
         "date": "22 октября 1882 года",
         "description": "Родился в деревне Акинчицы (теперь территория города Столбцы Столбцовского района Минской области Белоруссии), в семье лесника Михаила (Михася) Мицкевича."
@@ -285,13 +285,13 @@
         "title": "поэма «На перепутье»"
       }
     ],
-    "gallery": ["../img/Kolas1.jpg", "./img/Kolas2.jpg", "./img/Kolas3.jpg"],
+    "gallery": ["./img/Kolas1.jpg", "/img/Kolas2.jpg", "/img/Kolas3.jpg"],
     "video": "https://youtu.be/EPfYYg5QPMg",
     "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
   },
   {
     "name": "Змитро́к Бяду́ля (Самуил Ефимович Плавник)",
-    "photo": "./img/Byadulya/Byadulya1.jpeg",
+    "photo": "/img/Byadulya/Byadulya1.jpeg",
     "biography": [{
         "date": "23 апреля 1886 года",
         "description": "Родился в деревне Посадец Виленской губернии Российской империи (сейчас Логойский район, Минская область)."
@@ -354,13 +354,13 @@
         "title": "автобиографическая повесть «В дремучих лесах»"
       }
     ],
-    "gallery": ["./img/Byadulya1.jpeg", "./img/Byadulya2.jpeg", "./img/Byadulya3.jpeg"],
+    "gallery": ["/img/Byadulya1.jpeg", "/img/Byadulya2.jpeg", "/img/Byadulya3.jpeg"],
     "video": "https://youtu.be/GB_rlueYscM",
     "maps": "<iframe src=эhttps://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
   },
   {
     "name": "Максим Танк(Евгений Иванович Скурко)",
-    "photo": "./img/Tank/Tank1.jpg",
+    "photo": "/img/Tank/Tank1.jpg",
     "biography": [{
         "date": "4 сентября 1912 года",
         "description": "Родился в селе Пильковщина (ныне Мядельского района Минской области Беларуси) в крестьянской семье."
@@ -431,7 +431,7 @@
         "title": "«Да будет свет»"
       }
     ],
-    "gallery": ["./img/Tank1.jpg", "./img/Tank2.jpg", "./img/Tank3.jpg"],
+    "gallery": ["/img/Tank1.jpg", "/img/Tank2.jpg", "/img/Tank3.jpg"],
     "video": "https://youtu.be/ZECpiojVfZs",
     "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aa25aa2f1ca21e20dd1fa70c32876bc03a3e76eb5e95fe1cf4be45c2148318919&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
   }
