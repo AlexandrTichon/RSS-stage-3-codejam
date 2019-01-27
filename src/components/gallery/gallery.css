@@ -1,0 +1,34 @@
+.gallery_wrapper{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.btn_wrapper{
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.poet_photo{
+  min-height: 360px;
+  align-self: center;
+  /* object-fit: none; */
+}
+
+.gallery_btn{
+  margin: 0 5px;
+  height: 30px;
+  outline: none;
+  background-color: white;
+  border: 1px solid #aeb5b6;
+  border-radius: 5px;
+}
+
+.gallery_btn:hover{
+  background-color: #eef7f7;
+}
+
+.gallery_btn img{
+  height: inherit;
+}
