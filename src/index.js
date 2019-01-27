@@ -6,9 +6,13 @@ import Writing from './components/writing/writing';
 import data from './data/poets-ru.json';
 import Biography from './components/template';
 import setPoetInfo from './components/templateGenerator/setPoetInfo';
-
+import findPoet from './components/templateGenerator/findSelectedPoet';
 
 console.log('it works!awesome!');
+
+const POET = findPoet();
+const id = Number(POET.id);
+console.log(typeof Number(POET.id));
 
 class WritingDiv extends React.Component {
   constructor(props) {
@@ -25,13 +29,13 @@ class WritingDiv extends React.Component {
     const styles = {
       marginTop: '50px',
     };
-    // const writings = [];
+
     let i = 0;
 
     const writings = [];
 
     while (i < this.state.length) {
-      writings.push(<Writing date={data[0].works[i].date} title={data[0].works[i].title} />);
+      writings.push(<Writing date={data[id].works[i].date} title={data[id].works[i].title} />);
       i += 1;
     }
     return (
@@ -44,7 +48,7 @@ class WritingDiv extends React.Component {
 class GalleryDiv extends React.Component {
   render() {
     return (
-      <Gallery name={data[0].name} url={data[0].gallery} increment={1} />
+      <Gallery name={data[id].name} url={data[id].gallery} increment={1} />
     );
   }
 }

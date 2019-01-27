@@ -6,10 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const photo = document.querySelector('aside > figure > img');
   const name = document.querySelector('aside > figure > figcaption');
 
-  const src = photo.getAttribute('src');
-
-  console.log(src);
-
   photo.setAttribute('src', `${data[rand].photo}`);
   name.innerHTML = (`${data[rand].name.split('(')[0]}`);
 });
