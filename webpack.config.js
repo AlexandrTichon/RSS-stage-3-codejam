@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     index: './src/index.js',
-    poets: './src/poets.js',
+    poets: './src/findPoets.js',
   },
   output: {
     path: path.join(__dirname, 'build'),

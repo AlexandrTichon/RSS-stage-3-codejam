@@ -1,4 +1,4 @@
-import data from './data/poets.json';
+import data from './data/poets-ru.json';
 
 function getDOMPoets() {
   const poetItems = document.createElement('div');
@@ -125,10 +125,10 @@ function addEventList() {
   }
 }
 
-function getIdPoets() {
+export default function getIdPoets() {
   const arrIndex = [];
   data.forEach(item => arrIndex.push(item.id));
   return arrIndex;
 }
 
-export { addEventList, getIdPoets };
+addEventList();
