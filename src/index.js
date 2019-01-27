@@ -5,6 +5,8 @@ import Gallery from './components/gallery/gallery';
 import Writing from './components/writing/writing';
 import data from './data/poets-ru.json';
 import Biography from './components/template';
+import setPoetInfo from './components/templateGenerator/setPoetInfo';
+
 
 console.log('it works!awesome!');
 
@@ -21,7 +23,7 @@ class WritingDiv extends React.Component {
 
   render() {
     const styles = {
-      'margin-top': '50px',
+      marginTop: '50px',
     };
     // const writings = [];
     let i = 0;
@@ -47,6 +49,7 @@ class GalleryDiv extends React.Component {
   }
 }
 
+setPoetInfo();
 
 ReactDOM.render(<GalleryDiv />, window.document.getElementById('gallery-js'));
 ReactDOM.render(<Biography />, document.getElementById('timeline-js'));
