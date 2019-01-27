@@ -1,4 +1,3 @@
-import { addEventList, getIdPoets } from './poets';
 import './css/style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -9,6 +8,7 @@ import './components/biography';
 
 console.log('it works!awesome!');
 console.log(getIdPoets());
+
 addEventList();
 
 class GalleryDiv extends React.Component {
