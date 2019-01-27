@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from './components/gallery/gallery';
 import data from './data/poets-ru.json';
-import './components/biography';
+import Biography from './components/template';
 
 console.log('it works!awesome!');
 
@@ -15,4 +15,6 @@ class GalleryDiv extends React.Component {
   }
 }
 
+
 ReactDOM.render(<GalleryDiv />, window.document.getElementById('gallery-js'));
+ReactDOM.render(<Biography />, document.getElementById('timeline-js'));
