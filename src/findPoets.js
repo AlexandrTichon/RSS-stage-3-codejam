@@ -1,3 +1,4 @@
+import savePoet from './components/templateGenerator/saveSelectedPoet';
 import data from './data/poets-ru.json';
 
 function getDOMPoets() {
@@ -13,6 +14,7 @@ function getDOMPoets() {
         <p><img src=${item.photo} alt=${item.name} /></p>
         <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
       </figure>`;
+    poetItem.querySelector('a[href]').addEventListener('click', savePoet);
     poetItems.appendChild(poetItem);
   });
   if (document.getElementById('poets')) {
@@ -62,6 +64,7 @@ function getSearchPoets() {
             <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
           </figure>`;
+        searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
       document.getElementById('poets')
@@ -88,6 +91,7 @@ function getSearchPoets() {
             <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
           </figure>`;
+        searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
       document.getElementById('poets')
@@ -117,6 +121,7 @@ function getSearchPoets() {
             <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
           </figure>`;
+        searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
       document.getElementById('poets')
