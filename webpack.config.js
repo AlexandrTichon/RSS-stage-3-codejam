@@ -6,6 +6,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     poets: './src/findPoets.js',
+    poet_of_the_day: './src/poet_of_the_day.js',
   },
   output: {
     path: path.join(__dirname, 'build'),
