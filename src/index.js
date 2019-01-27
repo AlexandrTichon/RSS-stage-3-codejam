@@ -2,14 +2,11 @@ import './css/style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from './components/gallery/gallery';
-import data from './data/poets_ru.json';
+import data from './data/poets.json';
 import './components/biography';
 
 
 console.log('it works!awesome!');
-console.log(getIdPoets());
-
-addEventList();
 
 class GalleryDiv extends React.Component {
   render() {
