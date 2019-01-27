@@ -1,4 +1,5 @@
 .gallery_wrapper{
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-self: center;

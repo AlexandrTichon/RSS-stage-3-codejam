@@ -1,5 +1,5 @@
-import data from './data/poets.json';
 import savePoet from './components/templateGenerator/saveSelectedPoet';
+import data from './data/poets-ru.json';
 
 function getDOMPoets() {
   const poetItems = document.createElement('div');
@@ -9,24 +9,27 @@ function getDOMPoets() {
     const poetItem = document.createElement('div');
     poetItem.id = `poet-item-${item.id}`;
     poetItem.className = 'poet-item';
-    poetItem.style.width = '200px';
-    poetItem.style.height = '150px';
     poetItem.innerHTML = `
       <figure>
         <p><img src=${item.photo} alt=${item.name} /></p>
-        <figcaption><a href="./poet.html">${item.name}<a></figcaption>
+        <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
       </figure>`;
     poetItem.querySelector('a[href]').addEventListener('click', savePoet);
     poetItems.appendChild(poetItem);
   });
   if (document.getElementById('poets')) {
-    document.getElementById('poets').appendChild(poetItems);
+    document.getElementById('poets')
+      .appendChild(poetItems);
   }
 }
 
 function getSearchPoets() {
-  const inputName = document.getElementById('poet_name').value.toLowerCase();
-  const inputHometown = document.getElementById('poet_hometown').value.toLowerCase();
+  const inputName = document.getElementById('poet_name')
+    .value
+    .toLowerCase();
+  const inputBirthplace = document.getElementById('poet_birthplace')
+    .value
+    .toLowerCase();
   let searchItems;
   if (!document.getElementById('search_items')) {
     searchItems = document.createElement('div');
@@ -37,83 +40,92 @@ function getSearchPoets() {
     searchItems.innerHTML = '';
   }
 
-  if (!inputName && !inputHometown) {
-    document.getElementById('poet_items').style.display = 'block';
+  if (!inputName && !inputBirthplace) {
+    document.getElementById('poet_items')
+      .style.display = 'block';
   }
 
-  if (inputName && !inputHometown) {
+  if (inputName && !inputBirthplace) {
     document.getElementById('poet_items').style.display = 'none';
-    const dataFilter = data.filter(item => item.name.toLowerCase().search(inputName) + 1);
+    const dataFilter = data.filter(item => item.name
+      .toLowerCase()
+      .search(inputName) + 1);
     if (!dataFilter.length) {
       searchItems.innerHTML = 'По Вашему запросу ничего не найдено!';
-      document.getElementById('poets').appendChild(searchItems);
+      document.getElementById('poets')
+        .appendChild(searchItems);
     } else {
       dataFilter.forEach((item) => {
         const searchItem = document.createElement('div');
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
-        searchItem.style.width = '200px';
-        searchItem.style.height = '150px';
         searchItem.innerHTML = `
           <figure>
             <p><img src=${item.photo} alt=${item.name} /></p>
-            <figcaption><a href="./poet.html">${item.name}<a></figcaption>
+            <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
           </figure>`;
         searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
-      document.getElementById('poets').appendChild(searchItems);
+      document.getElementById('poets')
+        .appendChild(searchItems);
     }
   }
 
-  if (!inputName && inputHometown) {
+  if (!inputName && inputBirthplace) {
     document.getElementById('poet_items').style.display = 'none';
-    const dataFilter = data.filter(item => item.hometown.toLowerCase().search(inputHometown) + 1);
+    const dataFilter = data.filter(item => item.birthplace
+      .toLowerCase()
+      .search(inputBirthplace) + 1);
     if (!dataFilter.length) {
       searchItems.innerHTML = 'По Вашему запросу ничего не найдено!';
-      document.getElementById('poets').appendChild(searchItems);
+      document.getElementById('poets')
+        .appendChild(searchItems);
     } else {
       dataFilter.forEach((item) => {
         const searchItem = document.createElement('div');
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
-        searchItem.style.width = '200px';
-        searchItem.style.height = '150px';
         searchItem.innerHTML = `
           <figure>
             <p><img src=${item.photo} alt=${item.name} /></p>
-            <figcaption><a href="./poet.html">${item.name}<a></figcaption>
+            <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
           </figure>`;
         searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
-      document.getElementById('poets').appendChild(searchItems);
+      document.getElementById('poets')
+        .appendChild(searchItems);
     }
   }
 
-  if (inputName && inputHometown) {
+  if (inputName && inputBirthplace) {
     document.getElementById('poet_items').style.display = 'none';
-    const dataFilter = data.filter(item => item.name.toLowerCase().search(inputName) + 1
-      && item.hometown.toLowerCase().search(inputHometown) + 1);
+    const dataFilter = data.filter(item => item.name
+      .toLowerCase()
+      .search(inputName) + 1
+      && item.birthplace
+        .toLowerCase()
+        .search(inputBirthplace) + 1);
     if (!dataFilter.length) {
       searchItems.innerHTML = 'По Вашему запросу ничего не найдено!';
-      document.getElementById('poets').appendChild(searchItems);
+      document.getElementById('poets')
+        .appendChild(searchItems);
     } else {
       dataFilter.forEach((item) => {
         const searchItem = document.createElement('div');
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
-        searchItem.style.width = '200px';
-        searchItem.style.height = '150px';
         searchItem.innerHTML = `
           <figure>
             <p><img src=${item.photo} alt=${item.name} /></p>
-            <figcaption><a href="./poet.html">${item.name}<a></figcaption>
+            <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
           </figure>`;
         searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
-      document.getElementById('poets').appendChild(searchItems);
+      document.getElementById('poets')
+        .appendChild(searchItems);
     }
   }
 }
@@ -125,15 +137,16 @@ const Key = (e) => {
 function addEventList() {
   document.addEventListener('DOMContentLoaded', getDOMPoets);
   if (document.getElementById('search_button')) {
-    document.getElementById('search_button').addEventListener('click', getSearchPoets);
+    document.getElementById('search_button')
+      .addEventListener('click', getSearchPoets);
     document.addEventListener('keydown', Key);
   }
 }
 
-function getIdPoets() {
+export default function getIdPoets() {
   const arrIndex = [];
   data.forEach(item => arrIndex.push(item.id));
   return arrIndex;
 }
 
-export { addEventList, getIdPoets };
+addEventList();
