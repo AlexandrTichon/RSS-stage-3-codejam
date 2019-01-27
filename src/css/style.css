@@ -225,3 +225,81 @@ section h2 {
   font-weight: bolder;
   list-style-type: circle;
 }
+
+/* Styles for poets page */
+
+.poets {
+  width: 100%;
+}
+
+.poets-search {
+  width: 750px;
+  margin: 20px auto 40px auto;
+  padding: 10px;
+}
+
+.poets-search input {
+  width: 200px;
+  height: 25px;
+  margin-right: 20px;
+  padding: 10px 5px;
+  background: #f2faff;
+  border: 1px solid #3ec0dd;
+  border-radius: 4px;
+}
+
+.poets-search input:focus {
+  background: #ffffff;
+  outline: none;
+}
+
+.poets-search button {
+  width: 60px;
+  height: 25px;
+  background: #3ec0dd;
+  border: 0;
+}
+
+.poets-search button:hover {
+  background: #24bbdd;
+  cursor: pointer;
+}
+
+.poets-search button:active {
+  background: #89cedd;
+}
+
+.poets-search button:focus {
+  outline: none;
+}
+
+.poet-items, .search-items {
+  padding-left: 60px;
+}
+
+.poet-items figure, .search-items figure {
+  padding: 10px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  float: left;
+  margin: 0;
+  text-align: center;
+ }
+
+.poet-items img, .search-items img {
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 850px) {
+
+  .poets-search {
+    width: 250px;
+    margin-left: 80px;
+  }
+
+  .poets-search input {
+    margin-bottom: 10px;
+  }
+}

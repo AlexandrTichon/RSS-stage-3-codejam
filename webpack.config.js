@@ -5,7 +5,7 @@ module.exports = {
   devtool: 'source-map',
   entry: {
     index: './src/index.js',
-    poets: './src/poets.js',
+    poets: './src/findPoets.js',
     poet_of_the_day: './src/poet_of_the_day.js',
   },
   output: {
