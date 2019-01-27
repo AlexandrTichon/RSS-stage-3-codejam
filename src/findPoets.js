@@ -8,8 +8,6 @@ function getDOMPoets() {
     const poetItem = document.createElement('div');
     poetItem.id = `poet-item-${item.id}`;
     poetItem.className = 'poet-item';
-    poetItem.style.width = '200px';
-    poetItem.style.height = '150px';
     poetItem.innerHTML = `
       <figure>
         <p><img src=data${item.photo} alt=${item.name} /></p>
@@ -59,8 +57,6 @@ function getSearchPoets() {
         const searchItem = document.createElement('div');
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
-        searchItem.style.width = '200px';
-        searchItem.style.height = '150px';
         searchItem.innerHTML = `
           <figure>
             <p><img src=data${item.photo} alt=${item.name} /></p>
@@ -87,8 +83,6 @@ function getSearchPoets() {
         const searchItem = document.createElement('div');
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
-        searchItem.style.width = '200px';
-        searchItem.style.height = '150px';
         searchItem.innerHTML = `
           <figure>
             <p><img src=data${item.photo} alt=${item.name} /></p>
@@ -118,8 +112,6 @@ function getSearchPoets() {
         const searchItem = document.createElement('div');
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
-        searchItem.style.width = '200px';
-        searchItem.style.height = '150px';
         searchItem.innerHTML = `
           <figure>
             <p><img src=data${item.photo} alt=${item.name} /></p>
