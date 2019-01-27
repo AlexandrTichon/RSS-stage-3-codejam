@@ -1,5 +1,72 @@
 import data from './data/poets-ru.json';
 
+function getIdPoets() {
+  if (window.check === undefined) {
+    window.check = 0;
+  }
+
+  function getId(event) {
+    let [...id] = event.target
+      .parentNode
+      .parentNode
+      .parentNode
+      .id;
+    id.splice(0, 10);
+    id = id.join('');
+    if (!localStorage.getItem('poetId')) {
+      localStorage.setItem('poetId', id);
+    } else {
+      localStorage.setItem('poetId', id);
+    }
+  }
+
+  if (!window.check) {
+    const timerId = setInterval(() => {
+      if (document.querySelectorAll('.poet-items').length) {
+        const divs = document.querySelectorAll('.poet-items');
+        for (let i = 0; i < divs.length; i += 1) {
+          divs[i].addEventListener('click', getId, false);
+        }
+        clearInterval(timerId);
+      }
+    }, 1000);
+  }
+}
+
+function getIdSearch() {
+  if (window.check === undefined) {
+    window.check = 0;
+  }
+
+  function getId(event) {
+    let [...id] = event.target
+      .parentNode
+      .parentNode
+      .parentNode
+      .id;
+    id.splice(0, 10);
+    id = id.join('');
+    if (!localStorage.getItem('poetId')) {
+      localStorage.setItem('poetId', id);
+    } else {
+      localStorage.setItem('poetId', id);
+    }
+  }
+
+  if (!window.check) {
+    const timerId = setInterval(() => {
+      if (document.querySelectorAll('.search-items').length) {
+        const divs = document.querySelectorAll('.search-items');
+        for (let i = 0; i < divs.length; i += 1) {
+          divs[i].addEventListener('click', getId, false);
+          window.check = 1;
+        }
+        clearInterval(timerId);
+      }
+    }, 1000);
+  }
+}
+
 function getDOMPoets() {
   const poetItems = document.createElement('div');
   poetItems.id = 'poet_items';
@@ -19,6 +86,7 @@ function getDOMPoets() {
     document.getElementById('poets')
       .appendChild(poetItems);
   }
+  getIdPoets();
 }
 
 function getSearchPoets() {
@@ -66,6 +134,7 @@ function getSearchPoets() {
       });
       document.getElementById('poets')
         .appendChild(searchItems);
+      getIdSearch();
     }
   }
 
@@ -92,6 +161,7 @@ function getSearchPoets() {
       });
       document.getElementById('poets')
         .appendChild(searchItems);
+      getIdSearch();
     }
   }
 
@@ -121,6 +191,7 @@ function getSearchPoets() {
       });
       document.getElementById('poets')
         .appendChild(searchItems);
+      getIdSearch();
     }
   }
 }
@@ -136,12 +207,6 @@ function addEventList() {
       .addEventListener('click', getSearchPoets);
     document.addEventListener('keydown', Key);
   }
-}
-
-export default function getIdPoets() {
-  const arrIndex = [];
-  data.forEach(item => arrIndex.push(item.id));
-  return arrIndex;
 }
 
 addEventList();
