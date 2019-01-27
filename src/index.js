@@ -2,9 +2,8 @@ import './css/style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from './components/gallery/gallery';
-import data from './data/poets.json';
+import data from './data/poets-ru.json';
 import './components/biography';
-
 
 console.log('it works!awesome!');
 
