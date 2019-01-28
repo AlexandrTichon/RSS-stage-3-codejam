@@ -298,9 +298,13 @@ section h2 {
   transition: all 100ms linear;
 }
 
-.poet-item:hover {
+.poet-item:hover, .poet-video:hover {
   transform: scale(1.1);
   transition: all 100ms linear;
+}
+
+.poet-video {
+  text-align: center;
 }
 
 @media only screen and (max-width: 850px) {
