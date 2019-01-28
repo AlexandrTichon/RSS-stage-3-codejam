@@ -13,9 +13,9 @@ function warning() {
   let str = '';
 
   if (lang === 'by') {
-    str = 'Па Вашаму запросу нiчога не знойдзена!';
+    str = 'Па Вашаму запыту нiчога не знойдзена!';
   } else if (lang === 'eng') {
-    str = 'Nothing found!';
+    str = 'Nothing found on your request!';
   } else {
     str = 'По Вашему запросу ничего не найдено!';
   }
