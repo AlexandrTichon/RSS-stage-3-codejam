@@ -29,7 +29,7 @@ function setPageToBy() {
   mainWorks.innerHTML = 'Асноўныя работы';
   gallery.innerHTML = 'Фатаграфii';
   video.innerHTML = 'Вiдэа';
-  birthplace.innerHTML = 'Месца нараджжння';
+  birthplace.innerHTML = 'Месца нараджэння';
 }
 
 function setPageToRu() {
