@@ -1,5 +1,12 @@
 import savePoet from './components/templateGenerator/saveSelectedPoet';
-import data from './data/poets-ru.json';
+import getLang from './components/templateGenerator/getPageLang';
+import dataRu from './data/poets-ru.json';
+import dataEng from './data/poets-eng.json';
+import dataBy from './data/poets-by.json';
+import translatePoetsPage from './components/translate/translatePoets';
+
+translatePoetsPage();
+const data = getLang(dataBy, dataEng, dataRu);
 
 function getDOMPoets() {
   const poetItems = document.createElement('div');
@@ -42,7 +49,7 @@ function getSearchPoets() {
 
   if (!inputName && !inputBirthplace) {
     document.getElementById('poet_items')
-      .style.display = 'block';
+      .style.display = 'flex';
   }
 
   if (inputName && !inputBirthplace) {
