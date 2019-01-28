@@ -12,7 +12,7 @@ function setPageToEng() {
   h1.innerHTML = 'Portal "Culture of Belarus"';
   mainNav.innerHTML = 'Main';
   poetsNav.innerHTML = 'Belorussian Poets';
-  poetName.innerHTML = 'Poet\'s name <input type="text" id="poet_name">';
+  poetName.innerHTML = 'Poet\'s name: <input type="text" id="poet_name">';
   poetBirthPlace.innerHTML = 'Birthplace: <input type="text" id="poet_birthplace">';
   search.innerHTML = 'Search';
 }
