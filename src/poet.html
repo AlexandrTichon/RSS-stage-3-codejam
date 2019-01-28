@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +6,9 @@
   <title>Культурный портал Беларуси</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link href="//sorgalla.com/lity/dist/lity.css" rel="stylesheet">
+  <script src="//sorgalla.com/lity/vendor/jquery.js"></script>
+  <script src="//sorgalla.com/lity/dist/lity.js"></script>
 </head>
 <body>
   <header class="page-header">
@@ -53,11 +55,13 @@
       </section>
       <section class="video">
         <h3>Видео</h3>
-        <div id="video-js"></div>
+        <div id="video-js" class="poet-video">
+        </div>
       </section>
       <section class="map">
         <h3>Место рождения</h3>
-        <div id="map-js"></div>
+        <div id="map-js">
+        </div>
       </section>
     </main>
   <script src="../build/poet.js"></script>

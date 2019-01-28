@@ -10,11 +10,8 @@ import Biography from './components/template';
 import setPoetInfo from './components/templateGenerator/setPoetInfo';
 import findPoet from './components/templateGenerator/findSelectedPoet';
 import getLang from './components/templateGenerator/getPageLang';
-import translatePoetPage from './components/translate/translatePoet';
-
-translatePoetPage();
-
-console.log('it works!awesome!');
+import translatePoetPage from './components/translate/translatePoets';
+import { appendVideo, appendMap } from './components/templateGenerator/appendVigets';
 
 const POET = findPoet();
 const id = Number(POET.id);
@@ -52,7 +49,10 @@ class GalleryDiv extends React.Component {
   }
 }
 
+translatePoetPage();
 setPoetInfo();
+appendVideo();
+appendMap();
 
 ReactDOM.render(<GalleryDiv />, window.document.getElementById('gallery-js'));
 ReactDOM.render(<Biography />, document.getElementById('timeline-js'));
