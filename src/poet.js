@@ -10,7 +10,7 @@ import Biography from './components/template';
 import setPoetInfo from './components/templateGenerator/setPoetInfo';
 import findPoet from './components/templateGenerator/findSelectedPoet';
 import getLang from './components/templateGenerator/getPageLang';
-import translatePoetPage from './components/translate/translatePoets';
+import translatePoetPage from './components/translate/translatePoet';
 import { appendVideo, appendMap } from './components/templateGenerator/appendVigets';
 
 const POET = findPoet();
