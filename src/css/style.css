@@ -274,7 +274,9 @@ section h2 {
 }
 
 .poet-items, .search-items {
-  padding-left: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .poet-items figure, .search-items figure {
@@ -290,6 +292,19 @@ section h2 {
 .poet-items img, .search-items img {
   width: 200px;
   height: 200px;
+}
+
+.poet-item {
+  transition: all 100ms linear;
+}
+
+.poet-item:hover, .poet-video:hover {
+  transform: scale(1.1);
+  transition: all 100ms linear;
+}
+
+.poet-video {
+  text-align: center;
 }
 
 @media only screen and (max-width: 850px) {
