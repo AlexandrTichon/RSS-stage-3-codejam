@@ -7,6 +7,7 @@ import data from './data/poets-ru.json';
 import Biography from './components/template';
 import setPoetInfo from './components/templateGenerator/setPoetInfo';
 import findPoet from './components/templateGenerator/findSelectedPoet';
+import { appendVideo, appendMap } from './components/templateGenerator/appendVigets';
 
 console.log('it works!awesome!');
 
@@ -53,6 +54,8 @@ class GalleryDiv extends React.Component {
 }
 
 setPoetInfo();
+appendVideo();
+appendMap();
 
 ReactDOM.render(<GalleryDiv />, window.document.getElementById('gallery-js'));
 ReactDOM.render(<Biography />, document.getElementById('timeline-js'));
