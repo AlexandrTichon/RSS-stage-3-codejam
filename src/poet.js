@@ -10,6 +10,9 @@ import Biography from './components/template';
 import setPoetInfo from './components/templateGenerator/setPoetInfo';
 import findPoet from './components/templateGenerator/findSelectedPoet';
 import getLang from './components/templateGenerator/getPageLang';
+import translatePoetPage from './components/translate/translatePoet';
+
+translatePoetPage();
 
 console.log('it works!awesome!');
 
