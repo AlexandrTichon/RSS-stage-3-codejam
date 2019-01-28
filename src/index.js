@@ -12,7 +12,6 @@ console.log('it works!awesome!');
 
 const POET = findPoet();
 const id = Number(POET.id);
-console.log(typeof Number(POET.id));
 
 class WritingDiv extends React.Component {
   constructor(props) {
