@@ -1,6 +1,5 @@
 function savePoet() {
-  localStorage.clear();
-  localStorage.setItem('userSelect', this.innerHTML);
+  localStorage.setItem('userSelect', this.dataset.poet);
 }
 
 export default savePoet;
