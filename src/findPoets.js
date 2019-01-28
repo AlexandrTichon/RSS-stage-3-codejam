@@ -8,6 +8,20 @@ import translatePoetsPage from './components/translate/translatePoets';
 translatePoetsPage();
 const data = getLang(dataBy, dataEng, dataRu);
 
+function warning() {
+  const lang = localStorage.getItem('lang');
+  let str = '';
+
+  if (lang === 'by') {
+    str = 'Па Вашаму запросу нiчога не знойдзена!';
+  } else if (lang === 'eng') {
+    str = 'Nothing found!';
+  } else {
+    str = 'По Вашему запросу ничего не найдено!';
+  }
+  return str;
+}
+
 function getDOMPoets() {
   const poetItems = document.createElement('div');
   poetItems.id = 'poet_items';
@@ -60,7 +74,7 @@ function getSearchPoets() {
       .toLowerCase()
       .search(inputName) + 1);
     if (!dataFilter.length) {
-      searchItems.innerHTML = 'По Вашему запросу ничего не найдено!';
+      searchItems.innerHTML = warning();
       document.getElementById('poets')
         .appendChild(searchItems);
     } else {
@@ -89,7 +103,7 @@ function getSearchPoets() {
       .toLowerCase()
       .search(inputBirthplace) + 1);
     if (!dataFilter.length) {
-      searchItems.innerHTML = 'По Вашему запросу ничего не найдено!';
+      searchItems.innerHTML = warning();
       document.getElementById('poets')
         .appendChild(searchItems);
     } else {
@@ -121,7 +135,7 @@ function getSearchPoets() {
         .toLowerCase()
         .search(inputBirthplace) + 1);
     if (!dataFilter.length) {
-      searchItems.innerHTML = 'По Вашему запросу ничего не найдено!';
+      searchItems.innerHTML = warning();
       document.getElementById('poets')
         .appendChild(searchItems);
     } else {
