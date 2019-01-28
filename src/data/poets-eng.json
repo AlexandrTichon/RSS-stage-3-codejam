@@ -57,7 +57,7 @@
         "title": "Sonnet"
       }
     ],
-    "gallery": ["./data/img/Bogdanovich1.jpg", "../data/img/Bogdanovich2.jpg", "./data/img/Bogdanovich3.jpg"],
+    "gallery": ["./data/img/Bogdanovich1.jpg", "./data/img/Bogdanovich2.jpg", "./data/img/Bogdanovich3.jpg"],
     "video": "https://www.youtube.com/watch?v=xIHoUa6VJI8",
     "maps": "<iframe src='https://yandex.ru/map-widget/v1/?um=constructor%3Aca0787145253f3a3b70dcdfab8a861be037dc6d387c377b30882bd86d3d807b5&amp;source=constructor' width='100%' height='400' frameborder='0'></iframe>"
   },
