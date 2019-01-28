@@ -17,7 +17,7 @@ function getDOMPoets() {
     poetItem.id = `poet-item-${item.id}`;
     poetItem.className = 'poet-item';
     poetItem.innerHTML = `
-      <a href="./poet.html" target="_blank"  data-poet="${item.name}">
+      <a href="./poet.html" target="_blank" data-poet="${item.name}">
         <figure>
           <p><img src=${item.photo} alt=${item.name} /></p>
           <figcaption>${item.name}</figcaption>
@@ -69,7 +69,7 @@ function getSearchPoets() {
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
         searchItem.innerHTML = `
-        <a href="./poet.html" target="_blank"  data-poet="${item.name}">
+        <a href="./poet.html" target="_blank" data-poet="${item.name}">
           <figure>
             <p><img src=${item.photo} alt=${item.name} /></p>
             <figcaption>${item.name}</figcaption>
@@ -98,10 +98,12 @@ function getSearchPoets() {
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
         searchItem.innerHTML = `
-          <figure>
-            <p><img src=${item.photo} alt=${item.name} /></p>
-            <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
-          </figure>`;
+          <a href="./poet.html" target="_blank" data-poet="${item.name}">
+            <figure>
+              <p><img src=${item.photo} alt=${item.name} /></p>
+              <figcaption>${item.name}</figcaption>
+            </figure>
+          </a>`;
         searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
@@ -128,10 +130,12 @@ function getSearchPoets() {
         searchItem.id = `poet-item-${item.id}`;
         searchItem.className = 'poet-item';
         searchItem.innerHTML = `
-          <figure>
-            <p><img src=${item.photo} alt=${item.name} /></p>
-            <figcaption><a href="./poet.html" target="_blank">${item.name}<a></figcaption>
-          </figure>`;
+          <a href="./poet.html" target="_blank" data-poet="${item.name}">
+            <figure>
+              <p><img src=${item.photo} alt=${item.name} /></p>
+              <figcaption>${item.name}</figcaption>
+            </figure>
+          </a>`;
         searchItem.querySelector('a[href]').addEventListener('click', savePoet);
         searchItems.appendChild(searchItem);
       });
