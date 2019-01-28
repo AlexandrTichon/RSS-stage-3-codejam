@@ -3,38 +3,33 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Gallery from './components/gallery/gallery';
 import Writing from './components/writing/writing';
-import data from './data/poets-ru.json';
+import dataRu from './data/poets-ru.json';
+import dataBy from './data/poets-by.json';
+import dataEng from './data/poets-eng.json';
 import Biography from './components/template';
 import setPoetInfo from './components/templateGenerator/setPoetInfo';
 import findPoet from './components/templateGenerator/findSelectedPoet';
+import getLang from './components/templateGenerator/getPageLang';
 import { appendVideo, appendMap } from './components/templateGenerator/appendVigets';
-
-console.log('it works!awesome!');
 
 const POET = findPoet();
 const id = Number(POET.id);
 
+const data = getLang(dataBy, dataEng, dataRu);
+
 class WritingDiv extends React.Component {
-  constructor(props) {
-    super(props);
-
-    const len = data[1].works.length - 1;
-
-    this.state = {
-      length: len,
-    };
-  }
-
   render() {
     const styles = {
       marginTop: '50px',
     };
 
     let i = 0;
+    // const data = getLang();
+    const length = data[id].works.length - 1;
 
     const writings = [];
 
-    while (i < this.state.length) {
+    while (i < length) {
       writings.push(<Writing date={data[id].works[i].date} title={data[id].works[i].title} />);
       i += 1;
     }
