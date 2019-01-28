@@ -12,8 +12,6 @@ import findPoet from './components/templateGenerator/findSelectedPoet';
 import getLang from './components/templateGenerator/getPageLang';
 import { appendVideo, appendMap } from './components/templateGenerator/appendVigets';
 
-console.log('it works!awesome!');
-
 const POET = findPoet();
 const id = Number(POET.id);
 
