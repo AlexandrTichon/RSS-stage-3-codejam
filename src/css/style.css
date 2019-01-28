@@ -235,7 +235,6 @@ section h2 {
 .poets-search {
   width: 750px;
   margin: 20px auto 40px auto;
-  padding: 10px;
 }
 
 .poets-search input {
@@ -258,6 +257,7 @@ section h2 {
   height: 25px;
   background: #3ec0dd;
   border: 0;
+  border-radius: 4px;
 }
 
 .poets-search button:hover {
